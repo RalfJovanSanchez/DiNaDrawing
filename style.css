@@ -7,6 +7,57 @@
   font-family:'Poppins',sans-serif;
     }
 
+    /*  glass popup */
+.glass-modal {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  animation: fadeInUp 0.3s ease;
+}
+
+/* Google Button */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #fff;
+  border: 2px solid #000000; /* Yellow outline */
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 80%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.google-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.google-btn:hover {
+  background-color: #03ce2f;
+  transform: scale(1.03);
+}
+
+/* Modal animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 p, a, li, span {
   font-weight: 400;
@@ -52,21 +103,19 @@ p, a, li, span {
 
 
 
-    .glass-card {
-      background: rgba(255, 255, 255, 0.15);
-      border-radius: 1rem;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: #fff;
-      transition: all 0.3s ease;
-    }
+    .card {
+  background: rgba(73, 73, 73, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .glass-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
-    }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
 
     h1, h4 {
       color: #000000;
@@ -80,8 +129,58 @@ p, a, li, span {
     }
 
     .about-section {
+      background-color: rgb(255, 255, 255);
       margin-top: 3rem;
       color: #000000;
-      text-align: center;
+      text-align: justify;
     }
 
+     .faq-section {
+      padding: 60px 0;
+      background-color: #ffffff;
+      border-top: 2px solid #ffffff;
+    }
+    .faq-title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      line-height: 1.1;
+    }
+    .accordion-button {
+      background-color: #eaeaea;
+      color: #000;
+      font-weight: 600;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: #d9d9d9;
+      color: #000;
+    }
+    .accordion-body {
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    .learn-more {
+      background-color: #eaeaea;
+      padding: 15px 20px;
+      border-radius: 10px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #666;
+      border: none;
+    }
+    footer {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      padding: 30px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer .social-icons i {
+      margin: 0 5px;
+      font-size: 18px;
+    }
