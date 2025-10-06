@@ -1,10 +1,56 @@
   
     body {
-      background: url("Assets/TARA\ NA!.jpg") no-repeat center center fixed;
+      background: url("Assets/TARA\ NA!.jpg") no-repeat center center/cover;
   background-size: cover; 
   background-attachment: fixed; 
   background-position: center;
+  font-family:'Poppins',sans-serif;
     }
+
+
+p, a, li, span {
+  font-weight: 400;
+}
+.navbar-brand img.logo {
+  height: 35px;        /* adjust size of logo */
+  width: auto;         /* keeps proportions */
+  margin-right: 8px;   /* space between logo and text */
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: #000 !important;
+}
+
+   .navbar a {
+      color: white !important;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      color: #f06400 !important; /* yellow hover */
+    }
+
+    .btn-warning {
+      font-weight: 600;
+    }   .navbar {
+      background-color: rgba(255, 255, 255, 0.3); /* transparent glass effect */
+      backdrop-filter: blur(10px);
+    }
+
+      .navbar a {
+      color: rgb(0, 0, 0) !important;
+      font-weight: 500;
+    }
+
+
+
+
+
 
     .glass-card {
       background: rgba(255, 255, 255, 0.15);
